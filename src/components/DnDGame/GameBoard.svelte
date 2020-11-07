@@ -489,7 +489,7 @@
     justify-content: center;
     align-items: center;
     margin: 0;
-    height: 35px;
+    height: 50px;
     font-size: 1rem;
   }
   .c1 .colHeading,

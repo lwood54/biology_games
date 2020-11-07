@@ -29,6 +29,10 @@
   li {
     display: block;
     float: left;
+    padding: 0 5px;
+  }
+  li:hover {
+    font-weight: 500;
   }
   a {
     text-decoration: none;
