@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "biology_games",
+  "description": "A collection of games for biology students.",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
