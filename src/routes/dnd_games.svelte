@@ -35,7 +35,7 @@
     <h1
       class="game-link-container"
       in:fade={{ y: 200, duration: 300, delay: 500 }}>
-      <a class="game-link" href="/dndgame/unit2_2">Unit 5 - Protein Synthesis</a>
+      <p class="game-link disabled-link">Unit 5 - Protein Synthesis</p>
     </h1>
   </div>
   <div class="link-col">
