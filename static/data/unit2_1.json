@@ -18,81 +18,81 @@
 		{
 			"id": "p1",
 			"col": "col1",
-			"definition": "Process used by autotrophs which convert radiant energy into chemical energy."
+			"definition": "This portion of the cell cycle includes G1, S, and G2 Phases."
 		},
 		{
 			"id": "p2",
 			"col": "col1",
-			"hint": "Plants do this and we get to breath oxygen and eat sugar!"
+			"hint": "A cell can be found in this phase for about 90% of its cell cycle."
 		},
 		{
 			"id": "p3",
 			"col": "col1",
-			"pic": "images/unit1_3/photosynthesis.gif",
-			"alt": "photosynthesis"
+			"pic": "images/unit2_1/interphase.png",
+			"alt": "interphase"
 		},
 		{
 			"id": "p4",
 			"col": "col2",
-			"definition": "The process of breaking down glucose molecules and converting the energy into ATP molecules."
+			"definition": "In this phase, the cell is growing in preparation for DNA replication."
 		},
 		{
 			"id": "p5",
 			"col": "col2",
-			"hint": "This process happens in the mitochondria, carried out by both plants and animals."
+			"hint": "This happens before the S Phase."
 		},
 		{
 			"id": "p6",
 			"col": "col2",
-			"pic": "images/unit1_3/cellular_respiration.png",
-			"alt": "cellular respiration"
+			"pic": "images/unit2_1/g1.png",
+			"alt": "g1 phase"
 		},
 		{
 			"id": "p7",
 			"col": "col3",
-			"definition": "Elements or compounds that enter into a chemical reaction."
+			"definition": "The phase in which DNA is replicated in preparation for cell division."
 		},
 		{
 			"id": "p8",
 			"col": "col3",
-			"hint": "Examples include: carbon dioxide and water for photosynthesis"
+			"hint": "Happens before the G2 phase."
 		},
 		{
 			"id": "p9",
 			"col": "col3",
-			"pic": "images/unit1_3/reactants.png",
-			"alt": "reactants"
+			"pic": "images/unit2_1/DNA_Replication.gif",
+			"alt": "DNA replication"
 		},
 		{
 			"id": "p10",
 			"col": "col4",
-			"definition": "Elements or compounds produced or made by a chemical reaction."
+			"definition": "Period of rapid cell growth and protein synthesis where the cell pepares for mitosis."
 		},
 		{
 			"id": "p11",
 			"col": "col4",
-			"hint": "Examples include: carbon dioxide and water for cellular respiration"
+			"hint": "The 'get ready' stage, right before mitosis."
 		},
 		{
 			"id": "p12",
 			"col": "col4",
-			"pic": "images/unit1_3/products.png",
-			"alt": "products"
+			"pic": "images/unit2_1/g2.png",
+			"alt": "G2 Phase"
 		},
 		{
 			"id": "p13",
 			"col": "col5",
-			"definition": "Energy molecule created during cellular respiration to provide energy to the cell."
+			"definition": "This is the phase that carries out essential steps in cell division, including creating 2 identical nuclei."
 		},
 		{
 			"id": "p14",
 			"col": "col5",
-			"hint": "This is the 'currency' of the cell. Adenosine triphosphate."
+			"hint": "Takes up only about 10% of the time of the cell cycle."
 		},
 		{
 			"id": "p15",
 			"col": "col5",
-			"pic": "images/unit1_3/ATP.png",
+			"pic": "images/unit2_1/mitosis.gif",
 			"alt": "ATP"
 		}
 	],
