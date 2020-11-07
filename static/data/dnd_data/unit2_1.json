@@ -1,12 +1,6 @@
 {
 	"unit": "2.1",
 	"title": "Unit 2.1 - Cell Cycle and Mitosis",
-	"par1": {
-		"content": "Things and stuff and words for paragraph 1 for Unit 1.3"
-	},
-	"par2": {
-		"content": "even more learning words for some stuff that can be learned for Unit 1.3"
-	},
 	"dndgame1": {
 		"col1Heading": "Interphase",
 		"col2Heading": "G1 Phase",
@@ -18,7 +12,7 @@
 		{
 			"id": "p1",
 			"col": "col1",
-			"definition": "This portion of the cell cycle includes G1, S, and G2 Phases."
+			"definition": "This phase of the cell cycle includes G1, S, and G2 Phases."
 		},
 		{
 			"id": "p2",
@@ -39,7 +33,7 @@
 		{
 			"id": "p5",
 			"col": "col2",
-			"hint": "This happens before the S Phase."
+			"hint": "Initial 'growth' of the cell. This happens before the S Phase."
 		},
 		{
 			"id": "p6",
@@ -55,7 +49,7 @@
 		{
 			"id": "p8",
 			"col": "col3",
-			"hint": "Happens before the G2 phase."
+			"hint": "This phase 'makes' or 'synthesizes'. Happens before the G2 phase."
 		},
 		{
 			"id": "p9",
@@ -66,12 +60,12 @@
 		{
 			"id": "p10",
 			"col": "col4",
-			"definition": "Period of rapid cell growth and protein synthesis where the cell pepares for mitosis."
+			"definition": "This phase is getting prepared for mitosis by carrying out rapid cell growth and creating proteins."
 		},
 		{
 			"id": "p11",
 			"col": "col4",
-			"hint": "The 'get ready' stage, right before mitosis."
+			"hint": "The 'get ready' stage, right before mitosis. Has an important check to make sure there is enough DNA."
 		},
 		{
 			"id": "p12",
@@ -93,7 +87,7 @@
 			"id": "p15",
 			"col": "col5",
 			"pic": "images/unit2_1/mitosis.gif",
-			"alt": "ATP"
+			"alt": "mitosis"
 		}
 	],
 	"dndgame2": {
@@ -107,82 +101,82 @@
 		{
 			"id": "p16",
 			"col": "col1",
-			"definition": "Eukaryotic cells, which do NOT contain cell walls or chloroplasts, but do contain centrioles."
+			"definition": "Phase in which chromosomes condense and paired chromatids become visible. The nuclear envelope disappears."
 		},
 		{
 			"id": "p17",
 			"col": "col1",
-			"hint": "Type of eukaryotic cells that make up humans!"
+			"hint": "Prefix means before. First phase of mitosis."
 		},
 		{
 			"id": "p18",
 			"col": "col1",
-			"pic": "images/unit1_1/animal_cell.gif",
-			"alt": "animal cell"
+			"pic": "images/unit2_1/prophase.gif",
+			"alt": "prophase"
 		},
 		{
 			"id": "p19",
 			"col": "col2",
-			"definition": "Eukaryotic cells surrounded by cell walls, which DO contain chloroplasts, and a large central vacuole."
+			"definition": "Chromosomes line up in the middle under tension from the mitotic spindle."
 		},
 		{
 			"id": "p20",
 			"col": "col2",
-			"hint": "These type of eukaryotic cells make up the grass in your lawn."
+			"hint": "Chromosomes meet in the MIDDLE."
 		},
 		{
 			"id": "p21",
 			"col": "col2",
-			"pic": "images/unit1_1/plant_cell.jpg",
-			"alt": "plant cell"
+			"pic": "images/unit2_1/metaphase.gif",
+			"alt": "metaphase"
 		},
 		{
 			"id": "p22",
 			"col": "col3",
-			"definition": "Made up of at least one cell, interact with the environment, can grow and reproduce."
+			"definition": "Identical chromosomes are pulled away from each other towards opposite poles by the mitotic spindle."
 		},
 		{
 			"id": "p23",
 			"col": "col3",
-			"hint": "This category includes us, plants, and animals. aka biotic things."
+			"hint": "Chromosomes move AWAY."
 		},
 		{
 			"id": "p24",
 			"col": "col3",
-			"pic": "images/unit1_1/biotic_factors.jpg",
-			"alt": "living things"
+			"pic": "images/unit2_1/anaphase.gif",
+			"alt": "anaphase"
 		},
 		{
 			"id": "p25",
 			"col": "col4",
-			"definition": "Objects that do not meet the requirements of life such as being made up of one or more cells, growing and reproducing."
+			"definition": "Phase of mitosis in which chromosomes have moved to opposite ends of the cell and two nuclei are formed."
 		},
 		{
 			"id": "p26",
 			"col": "col4",
-			"hint": "The include things like viruses, rocks, water, sunlight. aka Abiotic factors."
+			"hint": "TWO nuclei formed. Cleavage gap formed, can see the beginnings of 2 cells forming."
 		},
 		{
 			"id": "p27",
 			"col": "col4",
-			"pic": "images/unit1_1/viruses_non-living.jpg",
-			"alt": "viruses non-living"
+			"pic": "images/unit2_1/telophase.gif",
+			"alt": "telophase"
 		},
 		{
 			"id": "p28",
 			"col": "col5",
-			"definition": "Membrane-bound structures found inside eukaryotic cells. They allow eukaryotes to become complex living organisms."
+			"definition": "The actual separation of the cytoplasm, which results in two individual identical daughter cells."
 		},
 		{
 			"id": "p29",
 			"col": "col5",
-			"hint": "Examples include: nucleus, mitochondria, chloroplast, golgi complex, rough and smooth ER"
+			"hint": "individual identical daughter cells, cytoplasm cutting "
 		},
 		{
 			"id": "p30",
 			"col": "col5",
-			"pic": "images/unit1_1/organelles.jpg",
-			"alt": "organelles"
+			"pic": "images/unit2_1/cytokinesis.gif",
+			"alt": "cytokinesis"
 		}
 	]
 }

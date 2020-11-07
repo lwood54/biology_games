@@ -3,7 +3,7 @@
 </script>
 
 <div in:fade={{ delay: 500, duration: 500 }}>
-  <h1>Content</h1>
+  <h1>Memory Games</h1>
 </div>
 
 <style>

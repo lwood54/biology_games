@@ -104,7 +104,7 @@ export default {
 		onwarn,
 	},
 
-	serviceworker: {
+	serviceworker: !dev && {
 		input: config.serviceworker.input().replace(/\.js$/, '.ts'),
 		output: config.serviceworker.output(),
 		plugins: [

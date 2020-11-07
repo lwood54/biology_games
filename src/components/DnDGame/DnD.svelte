@@ -14,7 +14,6 @@
   $: pieces = updatedRound === 1 ? dnd_content.pieces1 : dnd_content.pieces2;
   $: round = updatedRound;
   const updateRound = (e) => {
-    console.log("updatedRound: ", e.detail);
     updatedRound = e.detail;
   };
 </script>

@@ -1,8 +1,8 @@
 <nav>
   <ul>
-    <li><a href=".">home</a></li>
-    <li><a href="content">content</a></li>
-    <li><a href="games">games</a></li>
+    <li><a href=".">Home</a></li>
+    <li><a href="memory_games">Memory</a></li>
+    <li><a href="dnd_games">Drag and Drop</a></li>
   </ul>
 </nav>
 

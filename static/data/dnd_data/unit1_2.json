@@ -1,0 +1,182 @@
+{
+	"unit": "2 (1.2)",
+	"title": "Unit 2 (1.2) - Biomolecules and Enzymes",
+	"dndgame1": {
+		"col1Heading": "Carbohydrate",
+		"col2Heading": "Protein",
+		"col3Heading": "Lipid",
+		"col4Heading": "Nucleic Acid",
+		"col5Heading": "Monomer"
+	},
+	"pieces1": [
+		{
+			"id": "p1",
+			"col": "col1",
+			"definition": "Sugar molecules made up of carbon, hydrogen, and oxygen. Created by photosynthesis."
+		},
+		{
+			"id": "p2",
+			"col": "col1",
+			"hint": "Quick energy source. Examples include: breads, rice, potatoes, vegetables. Monomer is monosaccharide."
+		},
+		{
+			"id": "p3",
+			"col": "col1",
+			"pic": "images/unit1_2/carbohydrate.png",
+			"alt": "carboydrate"
+		},
+		{
+			"id": "p4",
+			"col": "col2",
+			"definition": "Biomolecules that perform most cellular work, make up enzymes, made up of carbon, hydrogen, oxygen, and nitrogen."
+		},
+		{
+			"id": "p5",
+			"col": "col2",
+			"hint": "Examples include: fish, beef, poultry. Monomer is amino acid."
+		},
+		{
+			"id": "p6",
+			"col": "col2",
+			"pic": "images/unit1_2/proteins.jpeg",
+			"alt": "proteins"
+		},
+		{
+			"id": "p7",
+			"col": "col3",
+			"definition": "Biomolecule which is used for insulation and long term energy storage. Composed of carbon, hydrogen, and oxygen."
+		},
+		{
+			"id": "p8",
+			"col": "col3",
+			"hint": "Long term energy. Makes up cell membrane, which has a hydrophilic head and hydrophobic tail."
+		},
+		{
+			"id": "p9",
+			"col": "col3",
+			"pic": "images/unit1_2/lipids.jpeg",
+			"alt": "lipids"
+		},
+		{
+			"id": "p10",
+			"col": "col4",
+			"definition": "Large biomolecules used for storing genetic information aka the 'blueprint' of the cell. Made up of carbon, hydrogen, oxygen, nitrogen, and phosophorus."
+		},
+		{
+			"id": "p11",
+			"col": "col4",
+			"hint": "This biomolecule is makes up DNA and RNA. The monomer is a nucleotide."
+		},
+		{
+			"id": "p12",
+			"col": "col4",
+			"pic": "images/unit1_2/nucleic_acids.png",
+			"alt": "nucleic acids"
+		},
+		{
+			"id": "p13",
+			"col": "col5",
+			"definition": "A molecule that can be bonded together with an identical molecule to form a polymer."
+		},
+		{
+			"id": "p14",
+			"col": "col5",
+			"hint": "Examples include: monosaccarides for carbs, amino acids for proteins, and nucleotids for nucleic acids"
+		},
+		{
+			"id": "p15",
+			"col": "col5",
+			"pic": "images/unit1_2/monomers.png",
+			"alt": "monomers"
+		}
+	],
+	"dndgame2": {
+		"col1Heading": "Enzyme",
+		"col2Heading": "Active Site",
+		"col3Heading": "Substrate",
+		"col4Heading": "Denatured",
+		"col5Heading": "Activation Energy"
+	},
+	"pieces2": [
+		{
+			"id": "p16",
+			"col": "col1",
+			"definition": "Made up of proteins, these molecules help lower the activation energy and act as a biological catalyst."
+		},
+		{
+			"id": "p17",
+			"col": "col1",
+			"hint": "Allow chemical reactions to use less energy, have an active site, can be used over and over."
+		},
+		{
+			"id": "p18",
+			"col": "col1",
+			"pic": "images/unit1_2/enzyme.gif",
+			"alt": "enzyme"
+		},
+		{
+			"id": "p19",
+			"col": "col2",
+			"definition": "Region on an enzyme that has a specific shape and binds to a protein or other molecule during a chemical reaction."
+		},
+		{
+			"id": "p20",
+			"col": "col2",
+			"hint": "This would be the slot in a lock that accepts key that fits it exactly."
+		},
+		{
+			"id": "p21",
+			"col": "col2",
+			"pic": "images/unit1_2/active_site.png",
+			"alt": "active site"
+		},
+		{
+			"id": "p22",
+			"col": "col3",
+			"definition": "A molecule upon which an enzyme acts. It/they are the reactants in a chemical reaction with enzymes."
+		},
+		{
+			"id": "p23",
+			"col": "col3",
+			"hint": "This would be the key that fits into the specific 'lock' or active site of an enzyme."
+		},
+		{
+			"id": "p24",
+			"col": "col3",
+			"pic": "images/unit1_2/substrate.png",
+			"alt": "substrate"
+		},
+		{
+			"id": "p25",
+			"col": "col4",
+			"definition": "This occurs when the shape of an enzyme changes due to environmental influences."
+		},
+		{
+			"id": "p26",
+			"col": "col4",
+			"hint": "Increasing the temperature too high or changing the pH of the environment can cause this to happen to an enzyme."
+		},
+		{
+			"id": "p27",
+			"col": "col4",
+			"pic": "images/unit1_2/denature.gif",
+			"alt": "denature"
+		},
+		{
+			"id": "p28",
+			"col": "col5",
+			"definition": "The amount of energy required for a chemical reaction to take place."
+		},
+		{
+			"id": "p29",
+			"col": "col5",
+			"hint": "Enzymes lower this in order to speed up the rate of chemical reactions."
+		},
+		{
+			"id": "p30",
+			"col": "col5",
+			"pic": "images/unit1_2/activation_energy.png",
+			"alt": "activation energy"
+		}
+	]
+}

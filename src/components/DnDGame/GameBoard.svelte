@@ -19,28 +19,7 @@
   const dispatch = createEventDispatcher();
   $: roundOver = piecesLeft <= 15;
   $: wonRound = roundOver && roundWrong < 5;
-  $: if (roundCorrect >= 0) {
-    switch (round) {
-      case 1:
-        dnd_store.updateR1Correct(roundCorrect);
-        break;
-      case 2:
-        dnd_store.updateR2Correct(roundCorrect);
-        break;
-    }
-    dnd_store.updateTotCorrect();
-  }
-  $: if (roundWrong >= 0) {
-    switch (round) {
-      case 1:
-        dnd_store.updateR1Wrong(roundWrong);
-        break;
-      case 2:
-        dnd_store.updateR2Wrong(roundWrong);
-        break;
-    }
-    dnd_store.updateTotWrong();
-  }
+
   $: if (roundOver && wonRound) {
     round = round === 1 ? 2 : 3;
     dispatch("checkround", round);
@@ -107,10 +86,29 @@
         }
         if (!checkIsMatch(e.target, dragItem)) {
           roundWrong += 1;
+          switch (round) {
+            case 1:
+              dnd_store.updateR1Wrong(roundWrong);
+              break;
+            case 2:
+              dnd_store.updateR2Wrong(roundWrong);
+              break;
+          }
+          dnd_store.updateTotWrong();
           e.target.style.backgroundColor = "#bf1d1d"; // bg = red
           dragItem.style.color = "#e8e1e1"; // font color = light gray
         } else if (checkIsMatch(e.target, dragItem)) {
           roundCorrect += 1;
+          switch (round) {
+            case 1:
+              console.log("adding 1 correct to round 1");
+              dnd_store.updateR1Correct(roundCorrect);
+              break;
+            case 2:
+              dnd_store.updateR2Correct(roundCorrect);
+              break;
+          }
+          dnd_store.updateTotCorrect();
           if (dragItem.children.length >= 1) {
             if (dragItem.children[0].tagName === "IMG") {
               dragItem.children[0].setAttribute("draggable", "false");
@@ -315,7 +313,10 @@
       </div>
     </div>
 
-    <div class="round-label" out:fade={{ duration: 10 }}>Round {round}</div>
+    <div class="round-label" out:fade={{ duration: 10 }}>
+      <h2>Round {round}</h2>
+      <h5>{title}</h5>
+    </div>
 
     <div
       class="pieces-container"
@@ -352,10 +353,6 @@
 </div>
 
 <style>
-  @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500&display=swap");
-  * {
-    font-family: "Spartan", sans-serif;
-  }
   .modal-message {
     width: 100%;
     text-align: center;
@@ -420,7 +417,7 @@
     align-items: center;
   }
   .img-piece {
-    max-height: 90%;
+    max-height: 100%;
     min-width: 75px;
     max-width: 100%;
     overflow: hidden;
@@ -436,10 +433,12 @@
   }
   .round-label {
     display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 114px;
-    font-size: 3rem;
+    font-size: 1rem;
   }
   .target-container {
     height: 70%;

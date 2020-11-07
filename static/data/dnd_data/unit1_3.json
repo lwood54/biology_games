@@ -1,12 +1,6 @@
 {
-	"unit": "1.3",
-	"title": "Unit 1.3 - Cell Processes and Energy Conversion",
-	"par1": {
-		"content": "Things and stuff and words for paragraph 1 for Unit 1.3"
-	},
-	"par2": {
-		"content": "even more learning words for some stuff that can be learned for Unit 1.3"
-	},
+	"unit": "3 (1.3)",
+	"title": "Unit 3 (1.3) - Cell Processes and Energy Conversion",
 	"dndgame1": {
 		"col1Heading": "Photosynthesis",
 		"col2Heading": "Cellular Respiration",
@@ -92,14 +86,14 @@
 		{
 			"id": "p15",
 			"col": "col5",
-			"pic": "images/unit1_3/ATP.png",
-			"alt": "ATP"
+			"pic": "images/unit1_3/ATP_molecule.png",
+			"alt": "ATP molecule"
 		}
 	],
 	"dndgame2": {
 		"col1Heading": "Passive Transport",
-		"col2Heading": "Cell Membrane",
-		"col3Heading": "Selectively-Permeable",
+		"col2Heading": "Hypotonic Solution",
+		"col3Heading": "Hypertonic Solution",
 		"col4Heading": "Concentration Gradient",
 		"col5Heading": "Active Transport"
 	},
@@ -107,82 +101,82 @@
 		{
 			"id": "p16",
 			"col": "col1",
-			"definition": "Eukaryotic cells, which do NOT contain cell walls or chloroplasts, but do contain centrioles."
+			"definition": "The movement of ions and other molecules across cell membranes without the need of ATP."
 		},
 		{
 			"id": "p17",
 			"col": "col1",
-			"hint": "Type of eukaryotic cells that make up humans!"
+			"hint": "Follows concentration gradient, does NOT need ATP."
 		},
 		{
 			"id": "p18",
 			"col": "col1",
-			"pic": "images/unit1_1/animal_cell.gif",
-			"alt": "animal cell"
+			"pic": "images/unit1_3/passiv_transport.gif",
+			"alt": "passive transport"
 		},
 		{
 			"id": "p19",
 			"col": "col2",
-			"definition": "Eukaryotic cells surrounded by cell walls, which DO contain chloroplasts, and a large central vacuole."
+			"definition": "An environment or solution that has less solute and more water than the cell."
 		},
 		{
 			"id": "p20",
 			"col": "col2",
-			"hint": "These type of eukaryotic cells make up the grass in your lawn."
+			"hint": "Water would enter the cell when placed in this solution."
 		},
 		{
 			"id": "p21",
 			"col": "col2",
-			"pic": "images/unit1_1/plant_cell.jpg",
-			"alt": "plant cell"
+			"pic": "images/unit1_3/hypotonic.jpg",
+			"alt": "hypotonic"
 		},
 		{
 			"id": "p22",
 			"col": "col3",
-			"definition": "Made up of at least one cell, interact with the environment, can grow and reproduce."
+			"definition": "An environment or solution which contains more solute and less water than the cell."
 		},
 		{
 			"id": "p23",
 			"col": "col3",
-			"hint": "This category includes us, plants, and animals. aka biotic things."
+			"hint": "Water would leave the cell and move into this environment."
 		},
 		{
 			"id": "p24",
 			"col": "col3",
-			"pic": "images/unit1_1/biotic_factors.jpg",
-			"alt": "living things"
+			"pic": "images/unit1_3/hypertonic.jpg",
+			"alt": "hypertonic"
 		},
 		{
 			"id": "p25",
 			"col": "col4",
-			"definition": "Objects that do not meet the requirements of life such as being made up of one or more cells, growing and reproducing."
+			"definition": "This refers to there being a range in the amount of solute from high to low."
 		},
 		{
 			"id": "p26",
 			"col": "col4",
-			"hint": "The include things like viruses, rocks, water, sunlight. aka Abiotic factors."
+			"hint": "In passive transport, movement goes with THIS, flowing from high to low."
 		},
 		{
 			"id": "p27",
 			"col": "col4",
-			"pic": "images/unit1_1/viruses_non-living.jpg",
-			"alt": "viruses non-living"
+			"pic": "images/unit1_3/concentration_gradient.png",
+			"alt": "concentration gradient"
 		},
 		{
 			"id": "p28",
 			"col": "col5",
-			"definition": "Membrane-bound structures found inside eukaryotic cells. They allow eukaryotes to become complex living organisms."
+			"definition": "The movement of ions or other molecules across a cell membrane requiring the use of ATP energy."
 		},
 		{
 			"id": "p29",
 			"col": "col5",
-			"hint": "Examples include: nucleus, mitochondria, chloroplast, golgi complex, rough and smooth ER"
+			"hint": "Needs ATP to possibly move against the concentration gradient."
 		},
 		{
 			"id": "p30",
 			"col": "col5",
-			"pic": "images/unit1_1/organelles.jpg",
-			"alt": "organelles"
+			"pic": "images/unit1_3/active_transport.gif",
+			"alt": "active transport"
 		}
 	]
 }

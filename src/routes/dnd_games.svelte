@@ -1,12 +1,14 @@
 <script>
-  import { fade } from "svelte/transition";
+  import { fade, fly } from "svelte/transition";
 </script>
 
 <svelte:head>
-  <title>Games</title>
+  <title>Drag and Drop Games</title>
 </svelte:head>
 
-<h1 class="games-title">Games</h1>
+<h1 class="games-title" in:fly={{ x: 600, duration: 300, delay: 500 }}>
+  Drag and Drop Games
+</h1>
 <div class="all-link-container">
   <div class="link-col">
     <h1
@@ -69,10 +71,6 @@
 </div>
 
 <style>
-  @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500&display=swap");
-  * {
-    font-family: "Spartan", sans-serif;
-  }
   .games-title {
     width: 100%;
     text-align: center;

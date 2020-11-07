@@ -13,12 +13,12 @@
 </main>
 
 <style>
+  @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500&display=swap");
+  * {
+    font-family: "Spartan", sans-serif;
+  }
   main {
-    /* position: relative; */
-    /* max-width: 56em; */
     background-color: white;
-    /* padding: 2em; */
-    /* margin: 0 auto; */
     box-sizing: border-box;
   }
 </style>

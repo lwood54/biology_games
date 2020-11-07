@@ -10,10 +10,13 @@
 
 <div class="game-over_container">
   <h1 class="title">Game Over</h1>
-  <h4 class="score-content">Total Correct: {totalCorrect}</h4>
-  <h4 class="score-content">Total Wrong: {totalWrong}</h4>
-  <h4 class="score-content">Final Score: {finalScore}</h4>
-  <a href="/content">Now you can review some content</a>
+  <h2 class="score-content">Total Correct: {totalCorrect}</h2>
+  <h2 class="score-content">Total Wrong: {totalWrong}</h2>
+  <h2 class="score-content">Final Score: {finalScore}</h2>
+  <p class="score-content">
+    Now take a screen shot of your score and send an email your teacher.
+  </p>
+  <a href="/">Home</a>
 </div>
 
 <style>
