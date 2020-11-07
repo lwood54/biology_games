@@ -71,6 +71,10 @@
 </div>
 
 <style>
+  @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500&display=swap");
+  * {
+    font-family: "Spartan", sans-serif;
+  }
   .games-title {
     width: 100%;
     text-align: center;

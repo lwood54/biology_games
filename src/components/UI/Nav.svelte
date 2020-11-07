@@ -7,6 +7,10 @@
 </nav>
 
 <style>
+  @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500&display=swap");
+  * {
+    font-family: "Spartan", sans-serif;
+  }
   nav {
     border-bottom: 1px solid rgba(255, 62, 0, 0.1);
     font-weight: 300;
