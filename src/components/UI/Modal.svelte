@@ -1,7 +1,9 @@
 <script lang="ts">
   import { fade, fly } from "svelte/transition";
   import { createEventDispatcher } from "svelte";
+
   export let title: string;
+
   const dispatch = createEventDispatcher();
   const closeModal = () => {
     dispatch("closeModal");
