@@ -10,6 +10,7 @@
   let firstSelected: { id: string; pairId: string };
   let secondSelected: { id: string; pairId: string };
   let canFlip: boolean = true;
+  let hasStarted: boolean = false;
   let numFlipped: number = 0;
   let numMatches: number = 0;
   let causeReset: boolean = false;
@@ -49,9 +50,10 @@
       }
     }
     canFlip = numFlipped < 2;
-    if (time === 0) {
+    if (!hasStarted) {
       setTimer("start");
     }
+    hasStarted = true;
   };
 
   const setTimer = (action: TimerAction) => {
@@ -81,6 +83,7 @@
     numMatches = 0;
     arrayOfCards = shuffleArray(arrayOfCards);
     finalTime = 0;
+    hasStarted = false;
   };
 </script>
 
