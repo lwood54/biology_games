@@ -76,9 +76,27 @@
     border: 0.063rem solid #0d233f;
     transform: rotateY(-180deg);
   }
+  /* @keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
   .card.is-flipped {
+    /* animation: spin 2s infinite linear; */ /*JUST experimenting with these. each option works*/
     transform: rotateY(-180deg);
+    /* transform: rotate(360deg); */
   }
 
   img {
