@@ -19,7 +19,7 @@
   let finalTime: number = 0;
   let timer: number;
 
-  $: if (numMatches === 12) {
+  $: if (numMatches === arrayOfCards.length / 2) {
     finalTime = time;
     setTimer("stop");
   }
@@ -75,6 +75,7 @@
   const handleFinish = () => {
     resetFlipped();
     time = 0;
+    clearInterval(timer);
     lockedCardIDs = [];
     flipCount = 0;
     numMatches = 0;
@@ -83,11 +84,16 @@
   };
 </script>
 
-{#if numMatches < 12}
+{#if numMatches < arrayOfCards.length / 2}
   <div id="board">
     <div class="score-container">
       <h2 class="score-detail">Card Flips: {flipCount}</h2>
-      <h2 class="score-detail">Matches {numMatches} / 12</h2>
+      <h2 class="score-detail">
+        Matches
+        {numMatches}
+        /
+        {arrayOfCards.length / 2}
+      </h2>
       <h2 class="score-detail">Timer: {time} sec</h2>
     </div>
     {#each arrayOfCards as card}
@@ -102,7 +108,7 @@
 {:else}
   <Modal title={"You've completed the challenge!"} on:closeModal={handleFinish}>
     <h3>You had {flipCount} flips.</h3>
-    <h3>And you got all 12 matches in {finalTime} seconds.</h3>
+    <h3>And you got all 9 matches in {finalTime} seconds.</h3>
   </Modal>
 {/if}
 
