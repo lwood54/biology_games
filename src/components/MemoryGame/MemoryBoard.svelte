@@ -19,8 +19,16 @@
   let time: number = 0;
   let finalTime: number = 0;
   let timer: number;
+  let triggerSignalMatch: boolean = false;
+  let roundOver: boolean = false;
+  let signalWin: boolean = false;
 
   $: if (numMatches === arrayOfCards.length / 2) {
+    signalWin = true;
+    setTimeout(() => {
+      roundOver = true;
+    }, 1000);
+    triggerSignalMatch = true;
     finalTime = time;
     setTimer("stop");
   }
@@ -35,16 +43,19 @@
       if (!firstSelected) {
         firstSelected = e.detail;
         causeReset = false;
+        triggerSignalMatch = false;
         numFlipped++;
         flipCount++;
       } else if (e.detail.id !== firstSelected.id) {
         secondSelected = e.detail;
         causeReset = false;
+        triggerSignalMatch = false;
         numFlipped++;
         flipCount++;
       }
       if (firstSelected.pairId === secondSelected?.pairId) {
         numMatches++;
+        triggerSignalMatch = true;
         lockedCardIDs.push(firstSelected.id, secondSelected.id);
         resetFlipped();
       }
@@ -62,7 +73,6 @@
         time++;
       }, 1000);
     } else if (action === "stop") {
-      console.log("this should run");
       clearInterval(timer);
     }
   };
@@ -84,10 +94,13 @@
     arrayOfCards = shuffleArray(arrayOfCards);
     finalTime = 0;
     hasStarted = false;
+    triggerSignalMatch = false;
+    roundOver = false;
+    signalWin = false;
   };
 </script>
 
-{#if numMatches < arrayOfCards.length / 2}
+{#if !roundOver}
   <div id="board">
     <div class="score-container">
       <h2 class="score-detail">Card Flips: {flipCount}</h2>
@@ -104,7 +117,8 @@
         cardItem={card}
         on:flipEvent={handleFlipEvent}
         allowFlip={canFlip}
-        lockedCards={lockedCardIDs}
+        signalMatch={lockedCardIDs.includes(card.id) && triggerSignalMatch}
+        won={signalWin}
         causeReset={!lockedCardIDs.includes(card.id) && causeReset} />
     {/each}
   </div>

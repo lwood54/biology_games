@@ -7,17 +7,30 @@
   export let cardItem: Card;
   export let causeReset: boolean;
   export let allowFlip: boolean = true;
-  export let lockedCards: string[];
+  export let signalMatch: boolean = false;
+  export let won: boolean = false;
 
   let showFront: boolean = true;
+  let currentClass = "card";
+
+  $: if (!showFront) {
+    currentClass += " is-flipped";
+    if (signalMatch) {
+      currentClass += " spin";
+    }
+  }
+  $: if (won) {
+    currentClass = "card won";
+  }
 
   $: if (causeReset) {
     showFront = causeReset;
+    currentClass = "card";
   }
   const toggleShowFront = () => {
     let card = { id: cardItem.id, pairId: cardItem.pairID };
-    if (!lockedCards.includes(cardItem.id)) {
-      dispatch("flipEvent", card);
+    if (!signalMatch) {
+      dispatch("flipEvent", card); // send flip event so board can track which cards have been selected
       if (allowFlip) {
         showFront = !showFront;
       }
@@ -25,7 +38,8 @@
   };
 </script>
 
-<div class={showFront ? 'card' : 'card is-flipped'}>
+<!-- <div class={showFront ? 'card' : isMatch ? 'card is-flipped spin' : 'card is-flipped'}> -->
+<div class={currentClass}>
   <div class="card__face card__face--front" on:click={toggleShowFront}>
     <img src="/images/general/eaton_eagle.png" alt="eagle" />
   </div>
@@ -86,10 +100,10 @@
 } */
   @keyframes spin {
     from {
-      transform: rotate(0deg);
+      transform: rotateY(0deg);
     }
     to {
-      transform: rotate(360deg);
+      transform: rotateY(720deg);
     }
   }
 
@@ -97,6 +111,13 @@
     /* animation: spin 2s infinite linear; */ /*JUST experimenting with these. each option works*/
     transform: rotateY(-180deg);
     /* transform: rotate(360deg); */
+  }
+
+  .spin {
+    animation: spin 750ms linear;
+  }
+  .won {
+    animation: spin 500ms infinite linear;
   }
 
   img {

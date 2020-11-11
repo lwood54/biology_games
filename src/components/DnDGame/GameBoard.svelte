@@ -101,7 +101,6 @@
           roundCorrect += 1;
           switch (round) {
             case 1:
-              console.log("adding 1 correct to round 1");
               dnd_store.updateR1Correct(roundCorrect);
               break;
             case 2:
