@@ -6,7 +6,8 @@
   <title>Mr. Wood's Biology Page</title>
 </svelte:head>
 <div class="home_container" in:fade={{ delay: 500, duration: 200 }}>
-  <h1>Biology Text Content Coming Soon...</h1>
+  <h1 class="title">Biology Text Content Coming Soon...</h1>
+  <!-- <a href="/codonchart">Codon Chart</a> -->
 </div>
 
 <style>
@@ -14,5 +15,11 @@
     display: flex;
     justify-content: center;
     padding: 10px;
+    flex-wrap: wrap;
+  }
+
+  .title {
+    text-align: center;
+    width: 100%;
   }
 </style>
