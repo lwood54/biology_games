@@ -178,21 +178,22 @@
       signalMatch("match");
     } else {
       wrong = true;
+      signalMatch("wrong");
     }
   };
 
-  const resetNotification = () => {};
   const signalMatch = (status) => {
     let amino_acids = document.getElementsByClassName("amino_acids");
     for (let i = 0; i < amino_acids.length; i++) {
       if (status === "match") {
         (amino_acids[i] as HTMLElement).style.backgroundColor = "#50f4847c";
-      } else {
+      } else if (status === "wrong") {
+        (amino_acids[i] as HTMLElement).style.backgroundColor = "red";
+      } else if (status === "reset") {
         (amino_acids[i] as HTMLElement).style.backgroundColor = "transparent";
       }
     }
   };
-  const signalWrong = () => {};
 </script>
 
 <div class="container">
@@ -633,7 +634,16 @@
   .submitBtn {
     width: 250px;
     height: 35px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 1px 1px 2px #0d233f;
     cursor: pointer;
+    background-color: #77bd43;
+    color: #0d233f;
+  }
+  .submitBtn:active {
+    background-color: #0d233f;
+    color: #77bd43;
   }
 
   .rm_border {
