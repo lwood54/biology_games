@@ -16,3 +16,7 @@ export function shuffleArray<T>(array: T[]): T[] {
 export const hasClass = (el: HTMLElement, clss: string) => {
   return el.classList.contains(clss);
 };
+
+export const getRandomNum = (arrayLength: number): number => {
+	return Math.floor(Math.random() * arrayLength)
+}
