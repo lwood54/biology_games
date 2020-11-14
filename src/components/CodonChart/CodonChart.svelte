@@ -1,14 +1,20 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { fly } from "svelte/transition";
-  import { getRandomNum } from "../../helpers";
-  import { arrayOfCodonMatches } from "./arrayOfCodonMatches";
+  import {
+    getRandomNum,
+    transcription,
+    translation,
+    makeDNAArray,
+  } from "../../helpers";
   let answer = "";
   let numAttempts: number = 0;
   let numCorrect: number = 0;
-  let randomNum = 54;
+  let randomNum: number;
   let match: boolean = false;
   let wrong: boolean = false;
+  let dnaList: string[];
+  let dnaTemplate: string;
   let currentCodon: string;
   let currentAminoAcid: string;
   let first_letter = "first_base_letter";
@@ -30,32 +36,27 @@
   let thirdBaseSelected = "";
 
   $: if (randomNum) {
-    ({
-      codon: currentCodon,
-      amino_acid: currentAminoAcid,
-    } = arrayOfCodonMatches[randomNum]);
+    dnaTemplate = dnaList[randomNum];
+    currentCodon = transcription(dnaTemplate);
+    currentAminoAcid = translation(currentCodon);
   }
+
   $: if (match || wrong) {
     setTimeout(() => {
       match = false;
       wrong = false;
       resetAll();
-      randomNum = getRandomNum(arrayOfCodonMatches.length);
+      randomNum = getRandomNum(dnaList.length);
       signalMatch("reset");
     }, 500);
   }
 
   onMount(() => {
-    // not using right now, but may add check to button clicks later, depends on
-    // user interaction/confusion for students. Should be fine with approach not using this.
-    // [codon_base_1, codon_base_2, codon_base_3] = codon.split("");
-    randomNum = getRandomNum(arrayOfCodonMatches.length);
-    // destructuring the object randomly selected from the array of codon matches
-    // and assigning to new variables in Svelte component
-    ({
-      codon: currentCodon,
-      amino_acid: currentAminoAcid,
-    } = arrayOfCodonMatches[randomNum]);
+    dnaList = makeDNAArray();
+    randomNum = getRandomNum(dnaList.length);
+    dnaTemplate = dnaList[randomNum];
+    currentCodon = transcription(dnaTemplate);
+    currentAminoAcid = translation(currentCodon);
   });
   const handleFirstBaseClick = (row: string) => {
     if (firstBaseSelected === "") {
@@ -614,6 +615,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 850px;
   }
   #codon_container {
     width: 100%;
