@@ -38,6 +38,10 @@
 </div>
 
 <style>
+  * {
+    font-family: "Spartan";
+  }
+
   .container {
     margin-top: 20px;
     display: flex;
@@ -73,6 +77,7 @@
   }
   .answer_input::placeholder {
     color: rgba(118, 123, 120, 0.721);
+    font-size: 1.25rem;
     text-align: center;
   }
   .answer_input:focus {
@@ -87,6 +92,8 @@
     cursor: pointer;
     background-color: #77bd43;
     color: #0d233f;
+    font-size: 1.25rem;
+    padding: 8px;
   }
   .submit_button:active {
     background-color: #0d233f;

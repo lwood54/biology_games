@@ -578,6 +578,9 @@
 </div>
 
 <style>
+  * {
+    font-family: "Spartan";
+  }
   .container {
     margin: 0 20px;
     display: flex;
@@ -664,6 +667,8 @@
     cursor: pointer;
     background-color: #77bd43;
     color: #0d233f;
+    font-size: 1.25rem;
+    padding: 8px;
   }
   .submit_button:active {
     background-color: #0d233f;
