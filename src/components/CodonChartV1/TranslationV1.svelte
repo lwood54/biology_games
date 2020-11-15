@@ -34,13 +34,11 @@
   let firstBaseSelected = "";
   let secondBaseSelected = "";
   let thirdBaseSelected = "";
-
   $: if (randomNum) {
     dnaTemplate = dnaList[randomNum];
     currentCodon = transcription(dnaTemplate);
     currentAminoAcid = translation(currentCodon);
   }
-
   $: if (match || wrong) {
     setTimeout(() => {
       match = false;
@@ -50,7 +48,6 @@
       signalMatch("reset");
     }, 500);
   }
-
   onMount(() => {
     dnaList = makeDNAArray();
     randomNum = getRandomNum(dnaList.length);
@@ -174,7 +171,6 @@
     resetSecondCol();
     answer = "";
   };
-
   const handleSubmit = () => {
     numAttempts++;
     if (answer.toLowerCase() === currentAminoAcid) {
@@ -186,7 +182,6 @@
       signalMatch("wrong");
     }
   };
-
   const signalMatch = (status) => {
     let amino_acids = document.getElementsByClassName("amino_acids");
     for (let i = 0; i < amino_acids.length; i++) {
@@ -745,7 +740,6 @@
     align-items: center;
     box-sizing: border-box;
   }
-
   .codon_letter_filler {
     height: 100px;
     width: 100px;
