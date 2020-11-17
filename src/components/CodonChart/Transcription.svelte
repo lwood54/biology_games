@@ -22,10 +22,12 @@
   <h2 class="dna_template">DNA Template:</h2>
   <h2 class="dna_template">{dnaTemplate && dnaTemplate.toUpperCase()}</h2>
   {#if wrong}
-    <h3 class="message">
-      Please try again, remember A matches with U, T matches with A, C matches
-      with G, and G matches with C.
-    </h3>
+    <div class="message_container">
+      <h3 class="message">Please try again, remember:</h3>
+      <h3 class="message">A {' --> '} U</h3>
+      <h3 class="message">T {' --> '} A</h3>
+      <h3 class="message">C {' <--> '} G</h3>
+    </div>
   {/if}
   <div class="answer_container">
     <input
@@ -48,14 +50,16 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 950px;
+    width: 770px;
     height: 650px;
+    /* overflow-y: scroll; */
   }
 
   .dna_template {
     width: 100%;
     text-align: center;
     font-size: 2rem;
+    box-sizing: border-box;
   }
 
   .answer_container {
@@ -104,7 +108,7 @@
     background-color: #78bd43a1;
   }
   .message {
-    width: 50%;
+    width: 100%;
     text-align: center;
   }
 </style>
