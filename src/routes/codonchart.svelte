@@ -100,7 +100,7 @@
 <style>
   .transcription_container,
   .translation_container {
-    overflow: hidden;
+    overflow: auto;
     display: flex;
     justify-content: center;
     align-items: center;
