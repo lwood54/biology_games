@@ -36,7 +36,7 @@
       bind:value={mRNAAnswer}
       placeholder="mRNA codon?" />
   </div>
-  <button class="submit_button" on:click={handleSubmit}>Submit</button>
+  <button class="submit_button" on:click={handleSubmit}>submit</button>
 </div>
 
 <style>
@@ -51,8 +51,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: 770px;
-    height: 650px;
-    /* overflow-y: scroll; */
+    height: 550px;
   }
 
   .dna_template {

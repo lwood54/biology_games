@@ -189,7 +189,7 @@
       </div>
       <div class="second-base">
         <div class="resetBtn_container">
-          <button class="reset_button" on:click={resetAll}>Reset</button>
+          <button class="reset_button" on:click={resetAll}>reset</button>
         </div>
         <div
           class={second_u_col}
@@ -211,7 +211,9 @@
           on:click={() => handleSecondBaseSelected('g')}>
           <h2>G</h2>
         </div>
-        <div class="codon_letter_filler" />
+        <div class="submit_button_container">
+          <button class="submit_button" on:click={handleSubmit}>submit</button>
+        </div>
       </div>
       <div class={first_u_row} id="U_row">
         <div class={first_letter} on:click={() => handleFirstBaseClick('u')}>
@@ -568,13 +570,13 @@
   </div>
   <div id="codon_container">
     <h1 class="codon">{codonMatch.codon.toUpperCase()}</h1>
+    <p>results in:</p>
     <input
       bind:value={answer}
       class="answer_input"
       type="text"
       placeholder="amino acid?" />
   </div>
-  <button class="submit_button" on:click={handleSubmit}>submit</button>
 </div>
 
 <style>
@@ -594,12 +596,11 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 10px;
+    margin: 10px 0;
   }
   .codon {
-    width: 100%;
     text-align: center;
-    margin: 10px 0;
+    margin: 10px 15px 0 10px;
   }
   .codon_chart {
     display: flex;
@@ -647,7 +648,7 @@
     border: none;
     border-bottom: 1px solid rgba(118, 123, 120, 0.899);
     padding: 2px;
-    margin-left: 2px;
+    margin-left: 15px;
     font-size: 1.5rem;
     text-align: center;
     color: rgba(86, 91, 88, 0.947);
@@ -658,21 +659,28 @@
   .answer_input:focus {
     outline: none;
   }
+  .submit_button_container {
+    display: flex;
+    justify-content: center;
+  }
   .submit_button {
-    width: 250px;
-    height: 35px;
-    border-radius: 3px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
-    box-shadow: 1px 1px 2px #0d233f;
-    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px black;
     background-color: #77bd43;
     color: #0d233f;
-    font-size: 1.25rem;
-    padding: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
   }
   .submit_button:active {
     background-color: #0d233f;
     color: #77bd43;
+    box-shadow: none;
   }
   .submit_button:focus {
     outline: 0;

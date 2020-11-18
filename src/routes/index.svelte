@@ -5,21 +5,48 @@
 <svelte:head>
   <title>Mr. Wood's Biology Site</title>
 </svelte:head>
-<div class="home_container" in:fade={{ delay: 500, duration: 200 }}>
-  <h1 class="title">Biology Text Content Coming Soon...</h1>
-  <a href="/codonchart">Codon Chart</a>
+<div class="all-link-container">
+  <div class="link-col">
+    <h1 class="section_link_container" in:fade={{ duration: 300, delay: 500 }}>
+      <a class="section_link" href="/codonchart">Codon Chart</a>
+    </h1>
+  </div>
 </div>
 
 <style>
-  .home_container {
+  .all-link-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .link-col {
+    width: 45%;
+    margin: auto;
+  }
+  .section_link_container {
+    width: 100%;
+    min-width: 250px;
+    height: 100px;
+    border: 1px solid rgb(13, 114, 114);
+    border-radius: 3px;
+    background-color: rgb(246, 249, 255);
+    color: rgb(13, 114, 114);
+    box-sizing: border-box;
+  }
+  .section_link_container:hover {
+    background-color: rgb(13, 114, 114);
+    color: rgb(246, 249, 255);
+  }
+  .section_link {
     display: flex;
     justify-content: center;
-    padding: 10px;
-    flex-wrap: wrap;
-  }
-
-  .title {
-    text-align: center;
+    align-items: center;
     width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
   }
 </style>
