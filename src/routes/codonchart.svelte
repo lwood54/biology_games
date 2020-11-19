@@ -107,9 +107,9 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 170px;
+    width: 160px;
     height: 500px;
-    /* padding: 20px; */
+    margin-right: -90px;
   }
 
   .instructions p {
