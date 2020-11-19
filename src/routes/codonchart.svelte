@@ -87,13 +87,6 @@
       <p>5) Put your answer below the codon and click submit!</p>
     </div>
     <Translation on:submit={handleSubmit} bind:score {codonMatch} />
-    <div class="right_container">
-      <img
-        class="animation_image"
-        src="images/unit2_2/translation.gif"
-        alt="translation" />
-      <div class="score">{score.numCorrect} / {score.numAttempts}</div>
-    </div>
   </div>
 {/if}
 
@@ -105,6 +98,7 @@
     justify-content: center;
     align-items: center;
     width: 1300px;
+    height: 570px;
     margin: auto;
     scrollbar-width: 0px;
   }
@@ -118,14 +112,8 @@
     /* padding: 20px; */
   }
 
-  .right_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    height: 500px;
-    /* padding: 20px; */
+  .instructions p {
+    margin: 0 0 10px;
   }
 
   .animation_image {
@@ -138,7 +126,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* height: 500px;
-    padding: 20px; */
+    font-size: 1.5rem;
+    margin-top: 10px;
   }
 </style>

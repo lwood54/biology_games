@@ -568,14 +568,21 @@
       <h1>third base</h1>
     </div>
   </div>
-  <div id="codon_container">
-    <h1 class="codon">{codonMatch.codon.toUpperCase()}</h1>
-    <p>results in:</p>
-    <input
-      bind:value={answer}
-      class="answer_input"
-      type="text"
-      placeholder="amino acid?" />
+  <div class="right_container">
+    <div id="codon_container">
+      <h1 class="codon">{codonMatch.codon.toUpperCase()}</h1>
+      <p>results in:</p>
+      <input
+        bind:value={answer}
+        class="answer_input"
+        type="text"
+        placeholder="amino acid?" />
+    </div>
+    <img
+      class="animation_image"
+      src="images/unit2_2/translation.gif"
+      alt="translation" />
+    <div class="score">{score.numCorrect} / {score.numAttempts}</div>
   </div>
 </div>
 
@@ -587,9 +594,9 @@
     margin: 0 20px;
     display: flex;
     justify-content: center;
+    flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
-    width: 770px;
+    width: 1100px;
   }
   #codon_container {
     width: 100%;
@@ -598,6 +605,30 @@
     flex-wrap: wrap;
     margin: 10px 0;
   }
+
+  .right_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 500px;
+    margin-left: -90px;
+  }
+
+  .score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .animation_image {
+    max-width: 100%;
+    height: auto;
+  }
+
   .codon {
     text-align: center;
     margin: 10px 15px 0 10px;
@@ -606,17 +637,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 945px;
     box-sizing: border-box;
   }
   .first_base_title {
-    transform: rotate(-90deg);
+    width: 200px;
+    transform: rotate(-90deg) translateY(45px);
   }
   .second_base_title {
     text-align: center;
   }
   .third_base_title {
-    transform: rotate(90deg);
+    width: 200px;
+    transform: rotate(90deg) translate(20px, 68px);
   }
   .resetBtn_container {
     display: flex;
