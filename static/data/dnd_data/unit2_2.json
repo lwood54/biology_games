@@ -1,0 +1,182 @@
+{
+	"unit": "2.2",
+	"title": "Unit 2.2 - Gene Expression",
+	"dndgame1": {
+		"col1Heading": "Transcription",
+		"col2Heading": "mRNA",
+		"col3Heading": "Protein Synthesis",
+		"col4Heading": "RNA Polymerase",
+		"col5Heading": "Nucleotide"
+	},
+	"pieces1": [
+		{
+			"id": "p1",
+			"col": "col1",
+			"definition": "process of making a copy of a genetic sequence by creating an mRNA strand"
+		},
+		{
+			"id": "p2",
+			"col": "col1",
+			"hint": "first step in gene expression, occurs in the nucleus"
+		},
+		{
+			"id": "p3",
+			"col": "col1",
+			"pic": "images/unit2_2/transcription.gif",
+			"alt": "transcription"
+		},
+		{
+			"id": "p4",
+			"col": "col2",
+			"definition": "single stranded molecule containing a ribose sugar and used to copy a DNA template strand"
+		},
+		{
+			"id": "p5",
+			"col": "col2",
+			"hint": "this is the 'messenger' that will carry the genetic code out of the nucleus"
+		},
+		{
+			"id": "p6",
+			"col": "col2",
+			"pic": "images/unit2_2/mRNA.png",
+			"alt": "mRNA"
+		},
+		{
+			"id": "p7",
+			"col": "col3",
+			"definition": "making new proteins (like hormones and enzymes) for the body"
+		},
+		{
+			"id": "p8",
+			"col": "col3",
+			"hint": "process carried out in 2 steps, first transcription, then translation"
+		},
+		{
+			"id": "p9",
+			"col": "col3",
+			"pic": "images/unit2_2/protein_synthesis.png",
+			"alt": "protein synthesis"
+		},
+		{
+			"id": "p10",
+			"col": "col4",
+			"definition": "enzyme that synthesizes mRNA by following a strand of DNA in the nucleus in step 1 of transcription"
+		},
+		{
+			"id": "p11",
+			"col": "col4",
+			"hint": "Enzyme helps carry out step 1 of gene expression, like the 'shampoo' and 'conditioner', unzips dna and attaches nucleotides"
+		},
+		{
+			"id": "p12",
+			"col": "col4",
+			"pic": "images/unit2_2/dna_polymerase.jpg",
+			"alt": "DNA Polymerase"
+		},
+		{
+			"id": "p13",
+			"col": "col5",
+			"definition": "Monomer of nucleic acids which contai 3 parts, including a nitrogenous base which differentiates it from others"
+		},
+		{
+			"id": "p14",
+			"col": "col5",
+			"hint": "has 4 bases for DNA and RNA. (CGAT for DNA and CG, A->U, and T->A in RNA) "
+		},
+		{
+			"id": "p15",
+			"col": "col5",
+			"pic": "images/unit2_2/nucleotide.jpg",
+			"alt": "nucleotide"
+		}
+	],
+	"dndgame2": {
+		"col1Heading": "Ribosome",
+		"col2Heading": "Translation",
+		"col3Heading": "Codon",
+		"col4Heading": "tRNA",
+		"col5Heading": "Amino Acid"
+	},
+	"pieces2": [
+		{
+			"id": "p16",
+			"col": "col1",
+			"definition": "Structure found in the cytoplasm or on Rough ER which carry out translation resulting in creation of proteins"
+		},
+		{
+			"id": "p17",
+			"col": "col1",
+			"hint": "small structure created in the nucleolus, but stays in the cytoplasm, found in eukaryotes and prokaryotes"
+		},
+		{
+			"id": "p18",
+			"col": "col1",
+			"pic": "images/unit2_2/ribosome.jpg",
+			"alt": "ribosome"
+		},
+		{
+			"id": "p19",
+			"col": "col2",
+			"definition": "Process in which an mRNA strand is used to instruct in the creation of a protein in a ribosome"
+		},
+		{
+			"id": "p20",
+			"col": "col2",
+			"hint": "2nd step in gene expression, happens in a ribosome, and outside the nucleus"
+		},
+		{
+			"id": "p21",
+			"col": "col2",
+			"pic": "images/unit2_2/translation.gif",
+			"alt": "translation"
+		},
+		{
+			"id": "p22",
+			"col": "col3",
+			"definition": "a sequence of three nucleotides which together form a unit of genetic code in a DNA or RNA molecule."
+		},
+		{
+			"id": "p23",
+			"col": "col3",
+			"hint": "we use these 3 letters to give instructions that finds an amino acids which helps to make a protein"
+		},
+		{
+			"id": "p24",
+			"col": "col3",
+			"pic": "images/unit2_2/codon.png",
+			"alt": "codon"
+		},
+		{
+			"id": "p25",
+			"col": "col4",
+			"definition": "RNA molecule which provides amino acids to the process of translation"
+		},
+		{
+			"id": "p26",
+			"col": "col4",
+			"hint": "contains anticodon which matches with a codon"
+		},
+		{
+			"id": "p27",
+			"col": "col4",
+			"pic": "images/unit2_2/tRNA.jpg",
+			"alt": "tRNA"
+		},
+		{
+			"id": "p28",
+			"col": "col5",
+			"definition": "Monomer of a protein, which is chained together in a ribosome."
+		},
+		{
+			"id": "p29",
+			"col": "col5",
+			"hint": "held on the end of a tRNA and chains together during translation"
+		},
+		{
+			"id": "p30",
+			"col": "col5",
+			"pic": "images/unit2_2/amino_acids.png",
+			"alt": "amino acids"
+		}
+	]
+}

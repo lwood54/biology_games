@@ -12,25 +12,25 @@
 <div class="all-link-container">
   <div class="link-col">
     <h1 class="game-link-container" in:fade={{ duration: 300, delay: 500 }}>
-      <a class="game-link" href="/dndgame/unit1_1">Unit 1 - Cells & Viruses</a>
+      <a class="game-link" href="/dndgame/unit1_1">Unit 1.1 - Cells & Viruses</a>
     </h1>
     <h1 class="game-link-container" in:fade={{ duration: 300, delay: 500 }}>
-      <a class="game-link" href="/dndgame/unit1_2">Unit 2 - Biomolecules</a>
+      <a class="game-link" href="/dndgame/unit1_2">Unit 1.2 - Biomolecules</a>
     </h1>
     <h1 class="game-link-container" in:fade={{ duration: 300, delay: 500 }}>
-      <a class="game-link" href="/dndgame/unit1_3">Unit 3 - Cell Energy</a>
+      <a class="game-link" href="/dndgame/unit1_3">Unit 1.3 - Cell Energy</a>
     </h1>
 
     <h1 class="game-link-container" in:fade={{ duration: 300, delay: 500 }}>
-      <a class="game-link" href="/dndgame/unit2_1">Unit 4 - Mitosis</a>
+      <a class="game-link" href="/dndgame/unit2_1">Unit 2.1 - Mitosis</a>
     </h1>
     <h1 class="game-link-container" in:fade={{ duration: 300, delay: 500 }}>
-      <p class="game-link disabled-link">Unit 5 - Protein Synthesis</p>
+      <a class="game-link" href="/dndgame/unit2_2">Unit 2.2 - Protein Synthesis</a>
     </h1>
   </div>
   <div class="link-col">
     <h1 class="game-link-container" in:fade={{ duration: 300, delay: 500 }}>
-      <p class="game-link disabled-link">Unit 7 - Genetics & Meiosis</p>
+      <p class="game-link disabled-link">Unit 3.1 - Genetics & Meiosis</p>
     </h1>
     <h1 class="game-link-container" in:fade={{ duration: 300, delay: 500 }}>
       <p class="game-link disabled-link">
@@ -38,14 +38,14 @@
       </p>
     </h1>
     <h1 class="game-link-container" in:fade={{ duration: 300, delay: 500 }}>
-      <p class="game-link disabled-link">Unit 9 - Ecosystems</p>
+      <p class="game-link disabled-link">Unit 3.2 - Ecosystems</p>
     </h1>
 
     <h1 class="game-link-container" in:fade={{ duration: 300, delay: 500 }}>
-      <p class="game-link disabled-link">Unit 10 - Taxonomy</p>
+      <p class="game-link disabled-link">Unit 4.1 - Taxonomy</p>
     </h1>
     <h1 class="game-link-container" in:fade={{ duration: 300, delay: 500 }}>
-      <p class="game-link disabled-link">Unit 11 - Ecosystems</p>
+      <p class="game-link disabled-link">Unit 4.2 - Ecosystems</p>
     </h1>
   </div>
 </div>
