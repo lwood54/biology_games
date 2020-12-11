@@ -220,7 +220,7 @@
 {#if modalOpen}
   <Modal title="Try Again!" on:closeModal={toggleModal}>
     <h3 class="modal-message">
-      You must get at least 11 correct to move on to the next round!
+      You cannot miss more than 4 and must get at least 11 correct!
     </h3>
   </Modal>
 {/if}
